@@ -1,0 +1,299 @@
+* {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #333;
+}
+html, body {
+    min-height: 100%;
+    background-color: #fff;
+}
+
+body {
+    position: relative;
+}
+/* ----------------- main ---------------*/
+a {
+    text-decoration: none;
+}
+/* --------------- navigation -------------*/
+.ally-navigation {
+    height: 50px;
+    color: #fff;
+    background-color: #328FC2;
+}
+
+.logo {
+    padding-top: 5px;
+}
+nav, .logo, copyright {
+    border: none;
+
+}
+.hdr a {
+    color: #fff;
+}
+nav.hdr a {
+    padding: 15px 20px;
+}
+
+nav.hdr a.selected {
+    background-color: #006999;
+    font-weight: bold;
+}
+
+/* --------------- footer -------------*/
+footer {
+    background-color: #e7e8e9;
+}
+
+.ftr a, .copyright > p {
+    color: #328fc2;
+    padding: 20px 20px 60px;
+}
+
+nav.ftr a.selected {
+    font-weight: bold;
+}
+
+
+
+/* --------------- main content -----------*/
+div > h1, .mobile h3 {
+    color: #650360;
+}
+
+p > a {
+    color: #65ABD1;
+    text-decoration: underline;
+}
+
+tbody > tr:nth-child(odd) > td {
+   background-color: #EEF5F0;
+}
+
+tbody > tr:nth-child(even) > td {
+   background-color: #DDEBE1;
+}
+
+th, 
+tfoot,
+tbody > tr > td:nth-child(2), 
+tbody > tr > td:nth-child(3) {
+    text-align: right;
+}
+
+th, tfoot > tr > td {
+    font-weight: normal;
+    font-size: .9em;
+    color: #888;
+}
+tbody > tr:nth-child(1) > td {
+    font-weight: bold;
+}
+
+.table > tbody > tr > td {
+    font-size: 1.3em;
+    color: #333;
+    padding: 12px 18px;
+}
+
+.table {
+    margin-top: 35px;
+    margin-bottom: 75px;
+}
+
+.mobile {
+    background-color: #BBD8C4;
+    position: relative; 
+    padding: 10px 15px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.mobile h3 {
+    margin: 0px 0px 5px;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.mobile img {
+
+    position: absolute;
+    display: inline-block;
+    bottom: 12px;
+    right: 20px;
+    
+}
+.mobile p {
+    margin: 0px 140px 0px 0px;
+    line-height: 1.6;
+}
+
+.rates {
+    font-weight: 100; 
+}
+
+.pipe {
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+
+/* ---------------- tabs --------------- */
+#news > article > h1,
+#archive > article > h1{
+    color: #328FC2;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+#news.selected, 
+#archive.selected {
+    display: block;
+    background-color: #F5F5F5
+}
+
+#news, 
+#archive {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #aaa;
+}
+#news article {
+    margin-bottom: 25px;
+}
+
+#news-tab,
+#archive-tab {
+    float: left;
+    padding: 6px 12px 7px;
+    border: 1px solid #aaa;
+    margin-top: 6px;
+    background-color: #dfeae1;
+    color: #006999;
+    font-weight: bold;
+}
+
+.unselected:hover {
+    cursor: pointer;
+}
+
+#news-tab.selected,
+#archive-tab.selected {
+    padding-top: 12px;
+    padding-bottom: 7px;
+    margin-top: 0;
+    background-color: #f5f5f5;
+    border-bottom: none;
+    color: #555;
+    
+}
+
+#news-tab.selected {
+    border-left: none;
+    border-right: 1px solid #aaa;
+}
+
+#archive-tab.selected {
+    border-left: 1px solid #aaa;
+}
+
+#archive-tab {
+    border-left: none; 
+}
+
+#news-tab {
+    border-right: none;
+    border-left: none;
+}
+
+.tabs {
+    height: 39px;
+}
+
+#archive > ul  {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#archive > ul > li {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.login > a {
+    display: block;
+    padding: 10px; 
+    background-color: #5a175e;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+#main-container {
+    padding-top: 50px;
+}
+
+.main > h1 {
+    margin-bottom: 35px;
+    font-size: 30pt;
+}
+
+.main p {
+    line-height: 1.6;
+}
+
+.login {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.main h3 {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.reasons > li {
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.reasons {
+    padding-left: 20px;
+}
+
+#modal-shadow { 
+    z-index: -10;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   
+}
+
+#modal-shadow.active {
+    z-index: 10;
+    display: block;
+}
+
+#modal-shadow form {
+    background-color: #fff;
+    
+    width: 500px;
+    padding: 30px;
+    display: block;
+    margin: 10% auto 0;
+}
+
+#modal-shadow > form a {
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+}
